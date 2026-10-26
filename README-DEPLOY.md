@@ -2,6 +2,14 @@
 
 This repository is a PHP SMTP email-validation library with a small authenticated HTTP API wrapper for deployment as a Render Docker web service.
 
+## Connect the correct GitHub repository in Render
+
+The existing Render service must use this fork as its source repository:
+
+`https://github.com/zhionscarlet-source/smtp-validate-email`
+
+In the Render dashboard, open the service settings and change the connected repository to this fork. Confirm the branch is `master`, the runtime is Docker, and the Dockerfile path is `./Dockerfile`. Committing to this fork will not trigger a deploy while Render remains connected to the upstream repository.
+
 ## Render configuration
 
 - **Runtime:** Docker
